@@ -250,6 +250,8 @@ async function run() {
 
       const deleteResult = await cartsCollection.deleteMany(query);
 
+      // send user email about the payment conformations
+
       res.send({ paymentResult, deleteResult });
     });
 
